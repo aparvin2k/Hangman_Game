@@ -1,5 +1,5 @@
 var words = ["avengers", "tmnt", "captain america", "iron man", "star wars", "the dark knight", "jurassic park", "titanic", "finding nemo", "transformers", "spider man", "forrest gump",
-"harry potter and the deathly hollows", "pirates of the caribbean", "frozen", "inception", "shrek", "guardians of the galaxy", "the sixth sense", "beverly hills cop", "the lord of the rings", "rocky", "skyfall", "the blind side", "the incredibles", "home alone" ];
+"harry potter and the deathly hallows", "pirates of the caribbean", "frozen", "inception", "shrek", "guardians of the galaxy", "the sixth sense", "beverly hills cop", "the lord of the rings", "rocky", "skyfall", "the blind side", "the incredibles", "home alone" ];
 var word = "";
 var blanks = [];
 var userGuess = "";
@@ -15,11 +15,29 @@ var gameover = document.querySelector("#gameover");
 		return;
 	};
 
+    function checkForSpace(word){
+        for (var i = 0; i < word.length; i++) {
+            if (word[i] === " ") {
+                return true;
+            }
+
+            else {
+                return false;
+            }
+        }
+    }
+
 	function setBlanks(){
 		blanks = [];
 	 	for (var i = 0; i < word.length; i++) {
-	    blanks[i] = "_";
-	  	}
+        if (checkForSpace(word)){
+            blanks.push(" ");
+        }
+        else {
+            blanks.push("_");
+        }
+
+        }
 		document.getElementById("blanks").innerHTML = blanks.join(" ");
 		return;
 	};
