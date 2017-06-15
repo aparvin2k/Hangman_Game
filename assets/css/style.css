@@ -1,0 +1,87 @@
+html {
+	height: 100%;
+}
+
+#headerBackground {
+	background-image: url(../images/starwars.png);
+	margin-bottom: 0;
+	background-color: #2a5a92;
+}
+
+.jumbotron .container {
+	width: 100%;
+}
+
+#title {
+	font-family: 'Pangolin', cursive;
+	font-size: 90px;
+	color: #b9964f;
+	padding-top: 50px;
+}
+
+#message {
+	font-family: 'Pangolin', cursive;
+	color: #eacb9c;
+	background-color: #06224f;
+}
+
+#instruction {
+	font-family: 'Pangolin', cursive;
+	font-size: 32px;
+	padding-top: 10px;
+	background-color: #06224f;
+}
+
+#blanks {
+	font-family: 'Pangolin', cursive;
+	margin-top: 50px;
+	font-size: 72px;
+	font-weight: bold;
+	color: #511c33;
+}
+
+#remaining {
+	font-family: 'Pangolin', cursive;
+	font-size: 24px;
+	color: #212227;
+}
+
+#guess {
+	font-family: 'Pangolin', cursive;
+	font-size: 24px;
+	color: #212227;
+}
+
+#content {
+	height: 100%;
+
+}
+
+#img-div {
+	position: relative;
+}
+
+#img-tnt {
+	height: auto;
+	position: absolute;
+	left: 300px;
+	visibility: hidden;
+}
+
+#saved {
+	height: auto;
+	position: absolute;
+	left: 300px;
+	visibility: hidden;
+}
+
+#gameover {
+	width: 400px;
+	height: auto;
+	position: absolute;
+	left: 200px;
+	visibility: hidden;
+}
+
+
+
