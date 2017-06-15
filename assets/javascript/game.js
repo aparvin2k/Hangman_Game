@@ -8,7 +8,6 @@ var message = "";
 var guessesLeft = 0;
 var remainingLetters = 0;
 var gameend = false;
-var gameover = document.querySelector("#gameover");
 
 	function randomWord(){
 		word = words[Math.floor(Math.random() * words.length)];
