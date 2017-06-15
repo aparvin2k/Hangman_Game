@@ -33,7 +33,7 @@ var gameover = document.querySelector("#gameover");
 		document.getElementById("start").style.visibility = "hidden";
         document.getElementById("gameover").style.visibility = "hidden";
 		document.getElementById("img-tnt").style.visibility = "visible";
-		document.getElementById("instruction").innerHTML = "Come on now, you can do better than that";
+		document.getElementById("instruction").innerHTML = "Choose letters to guess the right movie";
 	};
 
     function wrongLetter() {
