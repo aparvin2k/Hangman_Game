@@ -50,6 +50,7 @@ var gameover = document.querySelector("#gameover");
         document.getElementById("guess").innerHTML = guessBank;
 		document.getElementById("start").style.visibility = "hidden";
         document.getElementById("gameover").style.visibility = "hidden";
+        document.getElementById("saved").style.visibility = "hidden";
 		document.getElementById("img-tnt").style.visibility = "visible";
 		document.getElementById("instruction").innerHTML = "Choose letters to guess the right movie";
 	};
